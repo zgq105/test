@@ -1,0 +1,13 @@
+<resources>
+    <string name="open_dblink_floatbutton">open dblink（floatbutton）</string>
+    <string name="app_name">微云开放平台</string>
+    <string name="sdk_name">微云SDK</string>
+    <string name="btn_login">微信登录</string>
+    <string name="btn_logout">注销</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+</resources>

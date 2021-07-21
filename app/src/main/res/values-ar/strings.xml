@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="open_dblink_floatbutton">open dblink（floatbutton）</string>
+</resources>

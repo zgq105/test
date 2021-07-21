@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/dblink"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/open_dblink_floatbutton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dblink2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="open dblink（sharebanner）"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dblink3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="open dblink（filemanager）"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dblink4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="open dblink（filemanager）新版"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_owl"
+        android:text="http://beauty.beautymine.net/image?fromu003dvu0026appveru003d4.4840#gaidu003d84297859-a7f2-48ed-99a6-611332ea354cu0026geou003dyeu0026appveru003d4.4840"
+        />
+    <Button
+        android:id="@+id/btn_owl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="open owl"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_owl2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="open owl (vpn no)"
+        />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="vidmate test"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/vm_test"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_open_thread"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="btn_open_thread"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn_open_thread2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="btn_open_thread"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn_close_thread"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="btn_close_thread"
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/dialog_input"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp">
+    </androidx.appcompat.widget.AppCompatEditText>
+
+
+
+
+
+
+</LinearLayout>
