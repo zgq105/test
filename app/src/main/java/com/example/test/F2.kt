@@ -15,4 +15,8 @@ class F2 :Fragment(){
     ): View? {
         return inflater.inflate(R.layout.f2,container,false)
     }
+
+    fun test(){
+        System.out.println("develop")
+    }
 }
