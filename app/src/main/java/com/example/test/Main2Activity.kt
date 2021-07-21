@@ -90,6 +90,10 @@ class Main2Activity : AppCompatActivity() {
         webView.reload()
     }
 
+    fun f3(){
+        Log.d("zgq","develop add")
+    }
+
     fun t2(){
         Log.d("zgq","t2")
     }
