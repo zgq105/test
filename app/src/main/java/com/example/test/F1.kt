@@ -15,6 +15,9 @@ class F1 :Fragment(){
     ): View? {
         return inflater.inflate(R.layout.f1,container,false)
     }
+    fun test(){
+        System.out.println("develop")
+    }
 
 
     fun test2(){
