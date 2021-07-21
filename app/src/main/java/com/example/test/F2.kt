@@ -19,4 +19,8 @@ class F2 :Fragment(){
     fun test(){
         System.out.println("develop")
     }
+
+    fun test2(){
+        System.out.println("feature f1")
+    }
 }
