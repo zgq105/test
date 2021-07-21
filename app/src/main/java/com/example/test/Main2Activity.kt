@@ -90,5 +90,9 @@ class Main2Activity : AppCompatActivity() {
         webView.reload()
     }
 
+    fun f3(){
+        Log.d("zgq","develop add")
+    }
+
 
 }
