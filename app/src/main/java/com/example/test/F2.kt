@@ -19,4 +19,7 @@ class F2 :Fragment(){
     fun test2(){
         System.out.println("feature f1")
     }
+    fun test3(){
+        System.out.println("feature f1 test3 commit")
+    }
 }
