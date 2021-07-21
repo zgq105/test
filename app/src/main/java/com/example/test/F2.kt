@@ -16,6 +16,10 @@ class F2 :Fragment(){
         return inflater.inflate(R.layout.f2,container,false)
     }
 
+    fun test(){
+        System.out.println("develop")
+    }
+
     fun test2(){
         System.out.println("feature f1")
     }
