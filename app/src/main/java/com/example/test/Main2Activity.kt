@@ -136,6 +136,12 @@ class Main2Activity : AppCompatActivity() {
         Log.d("zgq","develop add")
     }
 
+    fun t2(){
+        Log.d("zgq","t2")
+    }
+
+
+
 
 
 
