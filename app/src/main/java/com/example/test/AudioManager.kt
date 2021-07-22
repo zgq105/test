@@ -115,4 +115,8 @@ object AudioManager {
     fun test2(){
 
     }
+
+    fun test3(){
+
+    }
 }
