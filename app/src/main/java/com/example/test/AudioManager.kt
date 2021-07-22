@@ -108,4 +108,8 @@ object AudioManager {
         mediaPlayer?.release()
         mediaPlayer=null
     }
+
+    fun test(){
+
+    }
 }
