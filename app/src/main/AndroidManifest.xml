@@ -3,11 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.test">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -18,32 +17,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".service.LiveActivity"
+            android:launchMode="singleInstance"></activity>
         <activity android:name=".Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <intent-filter>
                 <action android:name="android.intent.action.WEB_SEARCH" />
-<!--                <action android:name="android.intent.action.MEDIA_SEARCH" />-->
+                <!-- <action android:name="android.intent.action.MEDIA_SEARCH" /> -->
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name="com.tencent.weiyun.example.wxapi.WXEntryActivity"
-            android:exported="true">
-        </activity>
-
-        <activity android:name="com.tencent.weiyun.example.DirActivity"></activity>
+            android:exported="true"></activity>
+        <activity android:name="com.tencent.weiyun.example.DirActivity" />
 
         <receiver
             android:name="com.tencent.weiyun.example.AppRegister"
-            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            android:permission="com.tencent.mm.plugin.permission.SEND">
             <intent-filter>
                 <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
             </intent-filter>
@@ -53,21 +50,25 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileProvider"
             android:exported="false"
-            tools:replace="android:authorities"
-            android:grantUriPermissions="true">
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/filepaths" />
         </provider>
 
-        <receiver android:name=".BootBroadcastReceiver"
+        <receiver
+            android:name=".BootBroadcastReceiver"
             android:enabled="true"
             android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </receiver>
+
+        <service android:name=".service.LiveService"/>
     </application>
 
 </manifest>
