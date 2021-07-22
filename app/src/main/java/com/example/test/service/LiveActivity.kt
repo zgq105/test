@@ -14,4 +14,8 @@ class LiveActivity : AppCompatActivity() {
     private fun init(){
         ScreenManager.setActivity(this)
     }
+
+    private fun init2(){
+
+    }
 }
