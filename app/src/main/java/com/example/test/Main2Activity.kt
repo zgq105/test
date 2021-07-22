@@ -10,6 +10,9 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import com.example.test.service.LiveActivity
+import com.example.test.service.LiveService
+import com.example.test.service.ScreenManager
 
 
 class Main2Activity : AppCompatActivity() {
@@ -17,6 +20,11 @@ class Main2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         init()
+        initLive()
+    }
+
+    private fun initLive() {
+        LiveService.toLiveService(this)
     }
 
     private val myWebView:WebView by lazy {
@@ -98,9 +106,6 @@ class Main2Activity : AppCompatActivity() {
         Log.d("zgq","develop add")
     }
 
-    fun t2(){
-        Log.d("zgq","t2")
-    }
 
 
 }
