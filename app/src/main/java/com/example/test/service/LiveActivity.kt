@@ -18,4 +18,10 @@ class LiveActivity : AppCompatActivity() {
     private fun init2(){
 
     }
+    private fun init3(){
+
+    }
+    private fun init4(){
+
+    }
 }
