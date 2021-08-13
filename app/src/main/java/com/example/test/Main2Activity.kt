@@ -4,15 +4,23 @@ import android.app.SearchManager
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.webkit.WebResourceRequest
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import com.example.test.AudioManager.test
+import com.example.test.aa.TestService
+import com.example.test.aa.User
 import com.example.test.service.LiveActivity
 import com.example.test.service.LiveService
 import com.example.test.service.ScreenManager
+import com.example.test.workmanager.WorkRequestManager
+import java.io.File
+import java.util.concurrent.TimeUnit
 
 
 class Main2Activity : AppCompatActivity() {
@@ -20,11 +28,37 @@ class Main2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         init()
-        initLive()
+        //initLive()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            WorkRequestManager.doWork(this)
+        }
+
+        Handler(Looper.getMainLooper()).postDelayed(Runnable {
+            TestService.test()
+        },1000)
+
+        test()
+
     }
 
     private fun initLive() {
         LiveService.toLiveService(this)
+    }
+
+    fun test(){
+//        val res= TimeUnit.MILLISECONDS.toDays(86400000)
+        val parent:String?=null
+        val file= File(parent, "child")
+        Log.d("test","result: "+file.absolutePath)
+    }
+
+    fun t2(){
+        t3()
+    }
+
+    fun t3(){
+        val res:String?=null
+        res!!.toString()
     }
 
     private val myWebView:WebView by lazy {
@@ -103,9 +137,7 @@ class Main2Activity : AppCompatActivity() {
     }
 
 
-    fun t2(){
-        Log.d("zgq","t2")
-    }
+
 
 
 

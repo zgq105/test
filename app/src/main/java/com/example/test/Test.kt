@@ -43,4 +43,27 @@ object Test {
     ): String? {
         return formatDate(Date(mill), format, locale)
     }
+
+
+    val f1={p1:Int,p2:Int->
+        val item="aa"
+        item.filter { it.equals("a") }
+        val map= mapOf("k1" to "k2")
+        //map.forEach{_,vaule-> println("$vaule ")}
+    }
+
+   internal fun getExprName(expr: Expr):String{
+        when(expr){
+            is E1->{
+                return E1("AAA").name
+            }
+            else->return ""
+        }
+    }
 }
+
+
+sealed class Expr
+data class E1(val name:String):Expr()
+data class E2(val name:String):Expr()
+data class E3(val name:String):Expr()
