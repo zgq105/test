@@ -52,9 +52,6 @@ class Main2Activity : AppCompatActivity() {
         Log.d("test","result: "+file.absolutePath)
     }
 
-    fun t2(){
-        t3()
-    }
 
     fun t3(){
         val res:String?=null
